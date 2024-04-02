@@ -167,9 +167,9 @@ async def document_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -
     
     # Append the encapsulated summary to knowledge.txt
     with open("template/knowledge.txt", "a", encoding='utf-8') as file:
-        file.write(f"{encapsulated_summary}\n")
+        file.write(f"{encapsulated_summary}\n\n\n")
     
-    await update.message.reply_text("Your document has been processed and the knowledge has been encapsulated.")
+    await update.message.reply_text("Your document has been processed and the knowledge has been encapsulated into the model.")
 
 
 def main() -> None:

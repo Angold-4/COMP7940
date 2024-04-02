@@ -2,3 +2,5 @@ telegram
 configparser
 logging
 requests
+python-telegram-bot
+aiohttp
